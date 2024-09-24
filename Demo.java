@@ -1,16 +1,16 @@
-import java.util.scanner;
+import java.util.*;
 public class Demo
 {
     public static void main (String[] args )
     {
-        scanner scanner=new scanner(System.in);
-        int n=scanner.nextInt();
+        Scanner sc =new Scanner(System.in);
+        int n=sc.nextInt();
         int[] ar=new int [n];
         for(int i=0;i<n;i++)
         {
-            ar[i]=scanner.nextInt();
+            ar[i]=sc.nextInt();
         }
-        int k=scanner.nextInt();
+        int k=sc.nextInt();
         findLastOccurance(ar,k);
     }
     public static void findLastOccurance(int ar[],int k)
@@ -20,7 +20,7 @@ public class Demo
         {
             if(ar[i]==k)
             {
-                index=i
+                index=i;
             }
         }
         
@@ -30,7 +30,7 @@ public class Demo
         }
         else
         {
-            System.out.print(-1)
+            System.out.print(-1);
         }
 
 
